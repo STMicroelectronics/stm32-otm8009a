@@ -2,8 +2,6 @@
   ******************************************************************************
   * @file    otm8009a.h
   * @author  MCD Application Team
-  * @version V1.0.2
-  * @date    27-January-2017
   * @brief   This file contains all the constants parameters for the OTM8009A
   *          which is the LCD Driver for KoD KM-040TMP-02-0621 (WVGA)
   *          DSI LCD Display.
