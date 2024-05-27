@@ -167,6 +167,18 @@ __weak void DSI_IO_WriteCmd(uint32_t NbrParams, uint8_t *pParams)
 }
 
 /**
+  * @brief  DSI IO Read command.
+  * @note : Can be surcharged by application code implementation of the function.
+  */
+__weak int32_t DSI_IO_ReadCmd(uint32_t Reg, uint8_t *pData, uint32_t Size)
+{
+  /* NOTE : This function Should not be modified, when it is needed,
+            the DSI_IO_ReadCmd could be implemented in the user file
+   */
+  return 0;
+}
+
+/**
   * @brief  Initializes the LCD KoD display part by communication in DSI mode in Video Mode
   *         with IC Display Driver OTM8009A (see IC Driver specification for more information).
   * @param  hdsi_eval : pointer on DSI configuration structure
@@ -414,6 +426,17 @@ uint8_t OTM8009A_Init(uint32_t ColorCoding, uint32_t orientation)
   DSI_IO_WriteCmd(0, (uint8_t *)ShortRegData45);
 
   return 0;
+}
+
+/**
+  * @brief  Read the component ID.
+  * @retval Component ID
+  */
+uint16_t OTM8009A_ReadID(void)
+{
+  uint8_t pData=0;
+  DSI_IO_ReadCmd(OTM8009A_CMD_ID1, &pData, 1);
+  return pData;
 }
 
 /**
