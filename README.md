@@ -1,4 +1,4 @@
-# BSP OTM8009A Component
+# BSP OTM8009A LCD Component
 
 ![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/stm32-otm8009a.svg?color=brightgreen)
 
@@ -27,7 +27,7 @@ Details about the content of this release are available in the release note [her
 
 ## Compatibility information
 
-Please refer to the repository of the BSP **board** driver you are using to know which version of this BSP component driver to use. It is **crucial** that you use a consistent set of versions. It is **crucial** that you use a consistent set of versions as indicated.
+Please refer to the repository of the BSP **board** driver you are using to know which version of this BSP component driver to use. It is **crucial** that you use a consistent set of versions as indicated.
 
 ## Troubleshooting
 
